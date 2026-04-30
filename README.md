@@ -29,7 +29,7 @@
 | `REPO_TOKEN` | ✅ | 用于推送 Cron 更新的 GitHub Token | `ghp_xxxxxxxxxxxxxxxxxxxx`（需要特定权限，见下文） |
 | `TG_BOT_TOKEN` | ❌ | Telegram Bot Token | `123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11` |
 | `TG_CHAT_ID` | ❌ | Telegram Chat ID | `123456789` |
-| `PROXY_NODE_US` | ❌ | 代理节点地址，支持多种协议 | 见下方代理格式 |
+| `PROXY_NODE` | ❌ | 代理节点地址，支持多种协议 | 见下方代理格式 |
 
 
 ### ⚙️ REPO_TOKEN 权限要求
@@ -62,7 +62,7 @@ myaccount@mail.com-----MyStr0ngP@ssw0rd
 
 1. Fork 本仓库  
 2. 在仓库 Secrets 中配置 `HIDENCLOUD` 和 `REPO_TOKEN`（注意 PAT 权限）  
-3. （可选）配置 `TG_BOT_TOKEN`、`TG_CHAT_ID`、`PROXY_NODE_US`  
+3. （可选）配置 `TG_BOT_TOKEN`、`TG_CHAT_ID`、`PROXY_NODE`  
 4. 工作流会按初始 Cron 计划运行，首次成功后会自动计算并更新为最优的后续执行时间  
 5. 你也可以随时在 Actions 页面手动触发 `workflow_dispatch`  
 
